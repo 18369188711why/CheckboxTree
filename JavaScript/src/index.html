@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/tree.css">
+    <script type="text/javascript" src="js/CheckboxTree.js"></script>
+</head>
+
+<body>
+    <div id="treeCheck"></div>
+    <script>
+        var treeCheckBoxItem = new TreeCheckBox({
+            "parentId": "treeCheck",
+            "containerId": "treeCheckcontainerId",
+            "id": "treeCheckRootId"
+        });
+
+        treeCheckBoxItem.initTreeData([{
+            id: "tree_one",
+            content: "One",
+            checked: true,
+            expand: false,
+            status: "warning",
+            children: [{
+                id: "tree_one_one",
+                content: "One_one",
+                checked: true,
+                expand: true,
+                status: "warning",
+                children: [{
+                    id: "tree_one_one_one",
+                    content: "One_one_one",
+                    checked: true,
+                    expand: true,
+                    status: "warning",
+                }]
+            }, ]
+        }, {
+            id: "tree_two",
+            content: "Two",
+            checked: true,
+            expand: true,
+            status: "success",
+            children: [{
+                id: "tree_two_one",
+                content: "Two_one",
+                checked: true,
+                expand: true,
+                status: "success",
+                children: [{
+                    id: "tree_two_one_one",
+                    content: "Two_one_one",
+                    checked: true,
+                    expand: true,
+                    status: "success"
+                }, ]
+            }, ]
+        }, {
+            id: "tree_three",
+            content: "Three",
+            checked: true,
+            expand: true,
+            status: "default",
+            children: [{
+                id: "tree_three_one",
+                content: "Three_one",
+                checked: true,
+                expand: true,
+                status: "default"
+            }, {
+                id: "tree_three_two",
+                content: "Three_two",
+                checked: true,
+                expand: true,
+                status: "default"
+            }, {
+                id: "tree_three_three",
+                content: "Three_three",
+                checked: true,
+                expand: true,
+                status: "error"
+            }, ]
+        }]);
+    </script>
+</body>
+
+</html>
