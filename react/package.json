@@ -1,5 +1,5 @@
 {
-  "name": "react-tree-checkbox",
+  "name": "react-checkbox-tree",
   "version": "1.0.0",
   "description": "Tree with checkbox based on React",
   "main": "index.js",
